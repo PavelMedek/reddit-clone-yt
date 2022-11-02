@@ -105,6 +105,7 @@ const useCommunityData = (ssrCommunityData?: boolean) => {
       const newSnippet: CommunitySnippet = {
         communityId: community.id,
         imageURL: community.imageURL || "",
+        isModerator: user?.uid === community.creatorId,
       };
       batch.set(
         doc(
