@@ -19,7 +19,7 @@ const Moderating: React.FC<ModeratingProps> = ({ snippets }) => {
           key={snippet.communityId}
           displayText={`r/${snippet.communityId}`}
           link={`r/${snippet.communityId}`}
-          icon={FaReddit}
+          imageURL={snippet.imageURL}
           iconColor="brand.100"
         />
       ))}
